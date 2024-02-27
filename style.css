@@ -1,0 +1,76 @@
+body {
+  background-color: #333;
+  position: relative;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  backdrop-filter: blur(5px);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center;
+  background-size: cover;
+  filter: blur(0px);
+  transition: filter 0.5s ease;
+}
+
+.nav-link.imagine-proxy {
+  color: white;
+}
+
+.navbar {
+  
+  backdrop-filter: blur(10px);
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding: 0 1rem;
+  line-height: 4rem;
+  font-size: 1.5rem;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  line-height: 3rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-link:hover {
+  background-color: #f2f2f2;
+}
+
+.navbar-expanded {
+  transform: translateY(0);
+}
+
+.blurred {
+  filter: blur(5px);
+}
